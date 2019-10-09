@@ -8,7 +8,7 @@
     "build": "parcel build ./src/*.pug --no-source-maps",
     "clean": "del './dist/*' '!./dist/*.php' '!.htaccess'",
     "surge": "surge dist whispers.surge.sh",
-    "tidy-urls": "replace '.html' '' dist/*.html",
+    "tidy-urls": "replace '[.]html' '' dist/*.html",
     "prod": "run-s 'clean' 'build' 'tidy-urls' 'surge'"
   },
   "browserslist": [
@@ -28,6 +28,7 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "replace": "^1.1.1",
+    "surge": "^0.21.3",
     "tailwindcss": "^1.1.2"
   }
 }
