@@ -1,0 +1,30 @@
+{
+  "name": "pugwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/*.pug --open",
+    "build": "parcel build ./src/*.pug --no-source-maps",
+    "clean": "del './dist/*' '!./dist/*.php' '!.htaccess'",
+    "surge": "surge dist whispers.surge.sh",
+    "prod": "run-s 'clean' 'build' 'surge'"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "del-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "tailwindcss": "^1.1.2"
+  }
+}

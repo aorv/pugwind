@@ -1,0 +1,12 @@
+extends templates/layout
+
+block head
+  - var currentPage = "Home";
+  - var bodyClass = currentPage.replace(/\s+/g, '-').toLowerCase();
+  title #{siteTitle} | #{siteDesc}
+
+block content
+  .wrapper
+    h1 #{siteDesc}
+
+

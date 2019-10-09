@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  a:first-child {
+    margin-left: 0;
+  }
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  &__item {
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

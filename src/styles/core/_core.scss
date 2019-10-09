@@ -1,0 +1,30 @@
+@import '_variables';
+@import '_typography';
+
+body {
+  @apply bg-secondary text-white;
+}
+
+a {
+  transition: $base-transition;
+
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.wrapper {
+  @apply mx-auto my-6 px-6;
+
+  @screen md {
+    @apply my-10;
+  }
+}
+
+.logo {
+  width: 115px;
+
+  @screen md {
+    width: 140px;
+  }
+}

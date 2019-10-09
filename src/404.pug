@@ -1,0 +1,11 @@
+extends templates/layout
+
+block head
+  - var currentPage = "Error 404"
+  - var bodyClass = currentPage.replace(/\s+/g, '-').toLowerCase()
+  title #{currentPage} | #{siteTitle}
+
+block content
+  .wrapper
+    h1 #{currentPage}
+    p Sorry, the page you're looking for doesn't exist.

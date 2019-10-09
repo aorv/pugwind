@@ -1,0 +1,31 @@
+include ../inc/config
+
+doctype html
+html(lang="en-GB")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(name="twitter:card", content="summary")
+    meta(name="twitter:site", content=twitterHandle)
+    meta(name="twitter:title", content=siteTitle + ' | ' + siteDesc)
+    meta(name="twitter:description", content=siteLongDesc)
+    meta(name="twitter:image", content=siteUrl + "/assets/img/card-twitter.png")
+    meta(property="og:title", content=siteTitle + ' | ' + siteDesc)
+    meta(property="og:url", content=siteUrl)
+    meta(property="og:image", content=siteUrl + "/assets/img/card.png")
+    meta(property="og:description", content=siteLongDesc)
+    meta(property="og:site_name", content=siteTitle)
+    link(rel="icon", href="./assets/img/favicon.png")
+    link(href=googleFont, rel="stylesheet")
+    link(href=siteCSS, rel="stylesheet")
+    block head
+      title  #{siteTitle} | #{siteDesc}
+
+  body(class=bodyClass)
+    include ../inc/header
+
+    block content
+      h1 #{currentPage}
+
+    include ../inc/footer

@@ -1,0 +1,14 @@
+body {
+  @apply text-lg font-normal;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @apply text-3xl mb-8 font-medium leading-tight;
+}
+
+h2 {
+  @apply text-xl mb-8 font-medium leading-tight;
+}
