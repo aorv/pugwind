@@ -7,7 +7,7 @@
     "dev": "parcel ./src/index.pug --open",
     "build": "parcel build ./src/*.pug --no-source-maps",
     "clean": "del './dist/*' '!./dist/*.php' '!.htaccess'",
-    "surge": "surge dist whispers.surge.sh",
+    "surge": "surge dist pugwind.surge.sh",
     "tidy-urls": "replace '[.]html' '' dist/*.html",
     "prod": "run-s 'clean' 'build' 'tidy-urls' 'surge'"
   },
