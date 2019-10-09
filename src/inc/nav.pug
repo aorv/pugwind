@@ -8,8 +8,8 @@ mixin navLink(link, name)
 
 nav(class="fixed h-screen w-screen top-0 left-0 md:flex md:static md:h-auto md:w-auto font-medium")
   ul.main-nav
-    +navLink('/about', 'About')
-    +navLink('/contact', 'Contact')
+    +navLink('/about.pug', 'About')
+    +navLink('/contact.pug', 'Contact')
 
 span.main-nav-toggle.js-main-nav-toggle: ion-icon(name="menu")
 span.hidden.main-nav-toggle.js-main-nav-toggle: ion-icon(name="close")
